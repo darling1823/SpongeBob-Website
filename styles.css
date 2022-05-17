@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+    list-style: none;
+}
+
+header{
+    background-color:#128596;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuContainer{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+.bobHead{
+    width: 7vw;
+    padding-left: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    color: #FFF;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+input{
+    width: 10vw;
+    border: solid 2px;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url(./assets/lupa.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-size: 1vw;
+    font-size: 1vw;
+}
+
+
+.bobMain{
+    background-image: url(./assets/mainbob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    padding-top: 4vw;
+    color: #128596;
+    font-size: 5vw;
+    padding-left: 3vw;
+    padding-bottom: 3.4vw;
+    text-shadow: -1px 3px 5px black; 
+}
+
+main ul{
+    padding-left: 3vw;
+    font-size: 3vw;
+    color: #DB7948;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+
+li{
+    width: 50vw;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: #FEBD81;
+}
+
+@media screen and (max-width: 800px){
+
+    header{
+        justify-content: flex-start;
+    }
+
+    .menuContainer{
+    display: initial;
+}
+
+    .menu{
+        display: initial;
+        width: 5vw;
+        margin-left: 3vw;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .bobHead{
+        width: 9vw;
+        margin-left: 18vw;
+    }
+
+    h1{
+        text-align: center;
+        padding-left: 0;
+        padding-top: 2vw;
+        padding-bottom: 1vw;
+    }
+
+    main ul{
+        align-items: flex-end;
+        font-size: 4vw;
+        height: 40vh;
+    }
+
+
+}
