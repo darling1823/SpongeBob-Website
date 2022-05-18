@@ -8,6 +8,10 @@
     list-style: none;
 }
 
+body{
+    background-color: #E2EFF4;
+}
+
 header{
     background-color:#128596;
     display: flex;
@@ -63,6 +67,7 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 750px;
 }
 
 h1{
@@ -82,6 +87,7 @@ main ul{
     flex-direction: column;
     justify-content: space-evenly;
     height: 50vh;
+    max-height: 500px;
 }
 
 li{
@@ -91,6 +97,133 @@ li{
 li:hover{
     cursor: pointer;
     background-color: #FEBD81;
+}
+
+.bobStories{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+h2{
+    color: #128596;
+    font-size: 4vw;
+    font-weight: 700;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 55vw;
+}
+
+main figure{
+    width: 20vw;
+    height: 500px;
+    background-color: #128596;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+
+.patrick{
+    width: 300px;
+}
+
+.squid{
+    width: 350px;
+    padding-top: 10px;
+}
+
+.krab{
+    width: 350px;
+}
+
+.plankton{
+    width: 350px;
+}
+
+p{
+    position: absolute;
+}
+
+.patrickContainer:hover::before{
+    content: 'Patrick';
+    background-color: #DB7948;
+    width: 20vw;
+    height: 150px;
+    opacity: 80%;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    color:#FFF;
+}
+
+.squidContainer:hover::before{
+    content: 'Squidward';
+    background-color: #DB7948;
+    width: 20vw;
+    height: 150px;
+    opacity: 80%;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    color:#FFF;
+}
+
+.krabContainer:hover::before{
+    content: 'Mr. Krabs';
+    background-color: #DB7948;
+    width: 20vw;
+    height: 150px;
+    opacity: 80%;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    color:#FFF;
+}
+
+.planktonContainer:hover::before{
+    content: 'Plankton';
+    background-color: #DB7948;
+    width: 20vw;
+    height: 150px;
+    opacity: 80%;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    color:#FFF;
+}
+
+@media screen and (max-width: 1300px){
+    article{
+        flex-direction: column;
+    }
+
+    main figure{
+        width: 30vw;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .patrick{
+        width: 200px;
+    }
+    
+    .squid{
+        width: 250px;
+    }
+    
+    .krab{
+        width: 250px;
+    }
+    
+    .plankton{
+        width: 250px;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -118,6 +251,10 @@ li:hover{
         margin-left: 18vw;
     }
 
+    .bobMain{
+        max-height: 600px;
+    }
+
     h1{
         text-align: center;
         padding-left: 0;
@@ -131,5 +268,35 @@ li:hover{
         height: 40vh;
     }
 
+    
+    h2{
+        font-size: 5vw;
+    }
 
+}
+
+@media screen and (max-width: 600px){
+
+    main figure{
+        width: 40vw;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .patrick{
+        width: 150px;
+    }
+    
+    .squid{
+        width: 200px;
+    }
+    
+    .krab{
+        width: 200px;
+    }
+    
+    .plankton{
+        width: 200px;
+    }
 }
