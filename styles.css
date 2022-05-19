@@ -103,6 +103,7 @@ li:hover{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    margin-bottom: 4vw;
 }
 
 h2{
@@ -113,12 +114,13 @@ h2{
     padding-bottom: 3vw;
 }
 
-article{
+main article{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 55vw;
+    position: relative;
 }
 
 main figure{
@@ -130,6 +132,7 @@ main figure{
     justify-content: center;
     align-items: center;
     margin-bottom: 4vw;
+    position: relative;
 }
 
 .patrick{
@@ -149,8 +152,35 @@ main figure{
     width: 350px;
 }
 
-p{
+button{
     position: absolute;
+    background-color: #BF7A59;
+    border: 0px;
+    color: #E2EFF4;
+    width: 96px;
+    padding-top: 9.6px;
+    padding-bottom: 9.6px;
+    border-radius: 10px;
+    font-size: 19.2px;
+    top: 480px;
+    right: 7.5vw;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.patrickB{
+    right: 43vw;
+}
+
+.planktonB{
+    top: 1055px;
+}
+
+.krabB{
+    top: 1055px;
+    right: 43vw;
 }
 
 .patrickContainer:hover::before{
@@ -162,6 +192,7 @@ p{
     border-radius: 0px 0px 20px 20px;
     position: absolute;
     color:#FFF;
+    top: 0px;
 }
 
 .squidContainer:hover::before{
@@ -173,6 +204,7 @@ p{
     border-radius: 0px 0px 20px 20px;
     position: absolute;
     color:#FFF;
+    top: 0px;
 }
 
 .krabContainer:hover::before{
@@ -184,6 +216,7 @@ p{
     border-radius: 0px 0px 20px 20px;
     position: absolute;
     color:#FFF;
+    top: 0px;
 }
 
 .planktonContainer:hover::before{
@@ -195,18 +228,37 @@ p{
     border-radius: 0px 0px 20px 20px;
     position: absolute;
     color:#FFF;
+    top: 0px;
+}
+
+footer{
+    background-color: #128596;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 0.8vw;
+}
+
+footer article{
+    color: #FFF;
+}
+
+footer img{
+    width: 4vw;
 }
 
 @media screen and (max-width: 1300px){
-    article{
+    main article{
         flex-direction: column;
     }
 
     main figure{
         width: 30vw;
         height: 350px;
-        justify-content: center;
-        align-items: center;
     }
     
     .patrick{
@@ -223,6 +275,42 @@ p{
     
     .plankton{
         width: 250px;
+    }
+
+    .patrickContainer:hover::before{
+        width: 30vw;
+    }
+    
+    .squidContainer:hover::before{
+        width: 30vw;
+    }
+    
+    .krabContainer:hover::before{
+        width: 30vw;
+    }
+    
+    .planktonContainer:hover::before{
+        width: 30vw;
+    }
+
+    button{
+        top: 330px;
+        right: 24vw;
+    }
+
+    .patrickB{
+       right: 24vw;
+       top: 720px;
+    }
+
+    .planktonB{
+        top: 1515px;
+        right: 24vw;
+    }
+    
+    .krabB{
+        top: 1115px;
+        right: 24vw;
     }
 }
 
@@ -273,6 +361,15 @@ p{
         font-size: 5vw;
     }
 
+    footer{
+        flex-direction: row-reverse;
+        font-size: 2vw;
+        justify-content: space-evenly;
+    }
+    
+    footer img{
+        width: 6vw;
+    }
 }
 
 @media screen and (max-width: 600px){
