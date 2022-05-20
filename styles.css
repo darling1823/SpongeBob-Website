@@ -193,6 +193,11 @@ button:hover{
     position: absolute;
     color:#FFF;
     top: 0px;
+    cursor: pointer;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .squidContainer:hover::before{
@@ -205,6 +210,11 @@ button:hover{
     position: absolute;
     color:#FFF;
     top: 0px;
+    cursor: pointer;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .krabContainer:hover::before{
@@ -217,6 +227,11 @@ button:hover{
     position: absolute;
     color:#FFF;
     top: 0px;
+    cursor: pointer;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .planktonContainer:hover::before{
@@ -229,6 +244,11 @@ button:hover{
     position: absolute;
     color:#FFF;
     top: 0px;
+    cursor: pointer;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer{
@@ -279,18 +299,22 @@ footer img{
 
     .patrickContainer:hover::before{
         width: 30vw;
+        font-size: 3vw;
     }
     
     .squidContainer:hover::before{
         width: 30vw;
+        font-size: 3vw;
     }
     
     .krabContainer:hover::before{
         width: 30vw;
+        font-size: 3vw;
     }
     
     .planktonContainer:hover::before{
         width: 30vw;
+        font-size: 3vw;
     }
 
     button{
@@ -311,6 +335,50 @@ footer img{
     .krabB{
         top: 1115px;
         right: 24vw;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    button{
+        top: 330px;
+        right: 23vw;
+    }
+
+    .patrickB{
+       right: 23vw;
+       top: 720px;
+    }
+
+    .planktonB{
+        top: 1500px;
+        right: 23vw;
+    }
+    
+    .krabB{
+        top: 1105px;
+        right: 23vw;
+    }
+}
+
+@media screen and (max-width: 900px){
+    button{
+        top: 330px;
+        right: 22vw;
+    }
+
+    .patrickB{
+       right: 22vw;
+       top: 720px;
+    }
+
+    .planktonB{
+        top: 1490px;
+        right: 22vw;
+    }
+    
+    .krabB{
+        top: 1105px;
+        right: 22vw;
     }
 }
 
@@ -361,6 +429,26 @@ footer img{
         font-size: 5vw;
     }
 
+    button{
+        top: 330px;
+        right: 21.5vw;
+    }
+
+    .patrickB{
+       right: 21.5vw;
+       top: 710px;
+    }
+
+    .planktonB{
+        top: 1475px;
+        right: 21.5vw;
+    }
+    
+    .krabB{
+        top: 1090px;
+        right: 21.5vw;
+    }
+
     footer{
         flex-direction: row-reverse;
         font-size: 2vw;
@@ -396,4 +484,30 @@ footer img{
     .plankton{
         width: 200px;
     }
+
+    .patrickContainer:hover::before{
+        width: 40vw;
+        font-size: 3vw;
+    }
+    
+    .squidContainer:hover::before{
+        width: 40vw;
+        font-size: 3vw;
+    }
+    
+    .krabContainer:hover::before{
+        width: 40vw;
+        font-size: 3vw;
+    }
+    
+    .planktonContainer:hover::before{
+        width: 40vw;
+        font-size: 3vw;
+    }
+
+
+}
+
+@media screen and (max-width: 475px){
+    
 }
